@@ -69,5 +69,60 @@ By default, the API will be available at:
     "faculty_id": 2
   }
 ]
+```
 
+### 🔍 Filter courses
+
+- **By department:**  
+  `GET http://127.0.0.1:8000/courses?department=Computer Science`
+
+- **By credits:**  
+  `GET http://127.0.0.1:8000/courses?credits=3`
+
+- **By search term:**  
+  `GET http://127.0.0.1:8000/courses?search=AI`
+
+---
+
+### 📌 Get single course by ID
+
+`GET http://127.0.0.1:8000/courses/1`
+
+---
+
+### 👨‍🏫 Get all faculty
+
+`GET http://127.0.0.1:8000/faculty`
+
+---
+
+### 🔍 Filter faculty
+
+- **By department:**  
+  `GET http://127.0.0.1:8000/faculty?department=Computer Science`
+
+- **By specialization:**  
+  `GET http://127.0.0.1:8000/faculty?specialization=AI`
+
+---
+
+### 👨‍🏫 Get single faculty by ID
+
+`GET http://127.0.0.1:8000/faculty/1`
+
+---
+
+### 📚 Get courses taught by a faculty member
+
+`GET http://127.0.0.1:8000/faculty/1/courses`
+
+---
+
+### 📊 Statistics
+
+- **Total courses & by department:**  
+  `GET http://127.0.0.1:8000/stats/courses`
+
+- **Total faculty & by department:**  
+  `GET http://127.0.0.1:8000/stats/faculty`
 
