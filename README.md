@@ -1,46 +1,94 @@
-# College RESTful API
+📚 College RESTful API
 
-A simple RESTful API built in Python to serve course and faculty data.  
-Built as part of the **API_Development_Hackathon**.
+A simple RESTful API built in Python to serve course and faculty data.
+Built as part of the API_Development_Hackathon.
 
-## 📦 Features
-- Retrieve all courses or filter by department, credits, or search term
-- Retrieve a specific course by ID
-- Retrieve all faculty or filter by department or specialization
-- Retrieve a specific faculty member by ID
-- Get all courses taught by a faculty member
-- View basic statistics about courses and faculty
-- Ready to test via Postman
 
----
 
-## 🛠 Installation
+✨ Features
 
-```bash
+
+
+
+
+Retrieve all courses or filter by department, credits, or search term
+
+
+
+Retrieve a specific course by ID
+
+
+
+Retrieve all faculty or filter by department or specialization
+
+
+
+Retrieve a specific faculty member by ID
+
+
+
+Get all courses taught by a faculty member
+
+
+
+View basic statistics about courses and faculty
+
+
+
+Test easily with Postman
+
+
+
+🛠 Installation
+
+
+
+
+
+Clone the repository:
+
 git clone https://github.com/SS77728/API_Development_Hackaton.git
 cd API_Development_Hackaton
+
+
+
+Install dependencies:
+
 pip install fastapi uvicorn
 
-▶️ How to Run
 
-Start the API locally:
+
+Run the API:
 
 uvicorn main:app --reload
 
-The API will run at:
+By default, the API will be available at:
 
-    http://127.0.0.1:8000/
 
-You can explore interactive API docs at:
 
-    http://127.0.0.1:8000/docs
+
+
+Root: http://127.0.0.1:8000/
+
+
+
+Docs (Swagger UI): http://127.0.0.1:8000/docs
+
+
 
 🧪 How to Test with Postman
-1. Get all courses
 
-    Method: GET
+✅ Get All Courses
 
-    URL: http://127.0.0.1:8000/courses
+
+
+
+
+Method: GET
+
+
+
+URL: http://127.0.0.1:8000/courses
 
 Example Response:
 
@@ -67,63 +115,158 @@ Example Response:
   }
 ]
 
-2. Get a single course by ID
+🔍 Filter Courses
 
-    Method: GET
 
-    URL: http://127.0.0.1:8000/courses/1
 
-3. Filter courses
 
-    Method: GET
 
-    URL: http://127.0.0.1:8000/courses?department=Computer Science
+By department:
 
-    You can also filter by:
+GET http://127.0.0.1:8000/courses?department=Computer Science
 
-        credits → e.g. /courses?credits=3
 
-        search → e.g. /courses?search=AI
 
-4. Get all faculty
+By credits:
 
-    Method: GET
+GET http://127.0.0.1:8000/courses?credits=3
 
-    URL: http://127.0.0.1:8000/faculty
 
-5. Get a faculty member by ID
 
-    Method: GET
+By search term:
 
-    URL: http://127.0.0.1:8000/faculty/1
+GET http://127.0.0.1:8000/courses?search=AI
 
-6. Filter faculty
+📌 Get Single Course by ID
 
-    Method: GET
 
-    URL: http://127.0.0.1:8000/faculty?department=Computer Science
 
-    Or by specialization:
 
-        /faculty?specialization=AI
 
-7. Get all courses taught by a faculty member
+Method: GET
 
-    Method: GET
 
-    URL: http://127.0.0.1:8000/faculty/1/courses
 
-8. View statistics
+URL: http://127.0.0.1:8000/courses/1
 
-    Courses stats: GET → /stats/courses
+👨‍🏫 Get All Faculty
 
-    Faculty stats: GET → /stats/faculty
+
+
+
+
+Method: GET
+
+
+
+URL: http://127.0.0.1:8000/faculty
+
+🔍 Filter Faculty
+
+
+
+
+
+By department:
+
+GET http://127.0.0.1:8000/faculty?department=Computer Science
+
+
+
+By specialization:
+
+GET http://127.0.0.1:8000/faculty?specialization=AI
+
+👨‍🏫 Get Single Faculty by ID
+
+
+
+
+
+Method: GET
+
+
+
+URL: http://127.0.0.1:8000/faculty/1
+
+📚 Get Courses Taught by a Faculty Member
+
+
+
+
+
+Method: GET
+
+
+
+URL: http://127.0.0.1:8000/faculty/1/courses
+
+📊 Statistics
+
+
+
+
+
+Total courses & by department:
+
+GET http://127.0.0.1:8000/stats/courses
+
+
+
+Total faculty & by department:
+
+GET http://127.0.0.1:8000/stats/faculty
+
+
 
 🏗 Project Structure
 
 API_Development_Hackaton/
-├── data.py       # Course & faculty data
+├── data.py       # Contains sample data
 ├── main.py       # API endpoints
 ├── models.py     # Pydantic models
-├── LICENSE       # Project license
-└── README.md     # Project info
+├── LICENSE       # License info
+└── README.md     # This file
+
+
+
+🖼 Screenshots
+
+Place your screenshots inside an images/ folder, then reference them here:
+
+
+
+
+
+
+
+Running API
+
+
+
+Swagger UI
+
+
+
+Postman Test
+
+
+
+
+
+[Insert Image]
+
+
+
+[Insert Image]
+
+
+
+[Insert Image]
+
+
+
+📄 License
+
+This project is licensed under the MIT License.
+See the LICENSE file for details.
