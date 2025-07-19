@@ -129,14 +129,6 @@ By default, the API will be available at:
 
 ---
 
-## 🖼 Screenshots
-
-| Running API | Swagger UI | Postman Test |
-|:--:|:--:|:--:|
-| ![running.png](API/Running_API.png) | ![docs.png](API/docs.png) | ![using_docs.png](API/docs_run.png) | ![postman.png](API/postman.png) |
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License**.  
