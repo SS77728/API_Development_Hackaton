@@ -23,13 +23,13 @@ Built as part of the **API_Development_Hackathon**.
 git clone https://github.com/SS77728/API_Development_Hackaton.git
 cd API_Development_Hackaton
 pip install fastapi uvicorn
-'''
+```
 
 ▶️ **Running the API**
 
 ```bash
 uvicorn main:app --reload
-'''
+```
 
 By default, the API will be available at:
 
