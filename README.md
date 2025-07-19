@@ -71,7 +71,7 @@ By default, the API will be available at:
 ]
 ```
 
-## 🔍 Filter courses
+### 🔍 Filter courses
 
 - **By department:**  
   `GET http://127.0.0.1:8000/courses?department=Computer Science`
@@ -84,19 +84,19 @@ By default, the API will be available at:
 
 ---
 
-## 📌 Get single course by ID
+### 📌 Get single course by ID
 
 `GET http://127.0.0.1:8000/courses/1`
 
 ---
 
-## 👨‍🏫 Get all faculty
+### 👨‍🏫 Get all faculty
 
 `GET http://127.0.0.1:8000/faculty`
 
 ---
 
-## 🔍 Filter faculty
+### 🔍 Filter faculty
 
 - **By department:**  
   `GET http://127.0.0.1:8000/faculty?department=Computer Science`
@@ -106,19 +106,19 @@ By default, the API will be available at:
 
 ---
 
-## 👨‍🏫 Get single faculty by ID
+### 👨‍🏫 Get single faculty by ID
 
 `GET http://127.0.0.1:8000/faculty/1`
 
 ---
 
-## 📚 Get courses taught by a faculty member
+### 📚 Get courses taught by a faculty member
 
 `GET http://127.0.0.1:8000/faculty/1/courses`
 
 ---
 
-## 📊 Statistics
+### 📊 Statistics
 
 - **Total courses & by department:**  
   `GET http://127.0.0.1:8000/stats/courses`
@@ -134,8 +134,6 @@ By default, the API will be available at:
 | Running API | Swagger UI | Postman Test |
 |:--:|:--:|:--:|
 | ![running.png](running.png) | ![docs.png](docs.png) | ![postman.png](postman.png) |
-
-*(Replace filenames above if yours are different.)*
 
 ---
 
