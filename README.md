@@ -126,3 +126,20 @@ By default, the API will be available at:
 - **Total faculty & by department:**  
   `GET http://127.0.0.1:8000/stats/faculty`
 
+
+---
+
+## 🖼 Screenshots
+
+| Running API | Swagger UI | Postman Test |
+|:--:|:--:|:--:|
+| ![running.png](running.png) | ![docs.png](docs.png) | ![postman.png](postman.png) |
+
+*(Replace filenames above if yours are different.)*
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the `LICENSE` file for details.
