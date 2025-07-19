@@ -133,7 +133,7 @@ By default, the API will be available at:
 
 | Running API | Swagger UI | Postman Test |
 |:--:|:--:|:--:|
-| ![running.png](Running_API.png) | ![docs.png](docs.png) | ![using_docs.png](docs_run.png) | ![postman.png](postman.png) |
+| ![running.png](API/Running_API.png) | ![docs.png](API/docs.png) | ![using_docs.png](API/docs_run.png) | ![postman.png](API/postman.png) |
 
 ---
 
